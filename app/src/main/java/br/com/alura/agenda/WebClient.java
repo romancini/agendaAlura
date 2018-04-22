@@ -17,6 +17,7 @@ public class WebClient {
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestProperty("Content-type", "application/json");
             connection.setRequestProperty("Accept", "application/json");
+
             connection.setDoOutput(true);
 
             PrintStream printStream = new PrintStream(connection.getOutputStream());
@@ -27,6 +28,7 @@ public class WebClient {
             String reposta = scanner.next();
 
             return reposta;
+
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {

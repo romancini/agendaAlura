@@ -11,7 +11,7 @@ public class AlunoConverter {
     public String convertToJson(List<Aluno> alunos) {
         JSONStringer jsonStringer = new JSONStringer();
         try {
-            jsonStringer.object().key("List").array().object().key("aluno").array();
+            jsonStringer.object().key("list").array().object().key("aluno").array();
             for (Aluno aluno : alunos) {
                 jsonStringer.object();
                 jsonStringer.key("nome").value(aluno.getNome());

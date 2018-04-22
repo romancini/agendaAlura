@@ -6,8 +6,8 @@
     android:orientation="horizontal">
 
     <ImageView
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:src="@drawable/person"
         android:id="@+id/item_foto"/>
 
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/item_nome"
             android:text="@string/campo_nome"
-            android:textSize="20sp"
+            android:textSize="28sp"
             android:textStyle="bold"
             android:paddingLeft="10dp"/>
         <TextView
@@ -29,8 +29,31 @@
             android:layout_height="wrap_content"
             android:id="@+id/item_telefone"
             android:text="@string/campo_telefone"
+            android:textSize="24sp"
             android:paddingLeft="10dp"
             android:paddingTop="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:layout_marginRight="16dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_endereco"
+            android:text="@string/campo_endereco"
+            android:textSize="24sp"
+            android:paddingTop="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_site"
+            android:text="@string/campo_site"
+            android:textSize="24sp"
+            android:paddingTop="10dp"/>
     </LinearLayout>
 
 </LinearLayout>
