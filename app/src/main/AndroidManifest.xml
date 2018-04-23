@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.alura.agenda">
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,12 +20,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FormularioActivity"></activity>
+        <activity android:name=".FormularioActivity" />
+
         <receiver android:name=".receiver.SMSReciever">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVER" />
             </intent-filter>
         </receiver>
+
+        <activity android:name=".ProvasActivity" />
+        <activity android:name=".DetalheProvasActivity" />
+        <activity android:name=".ProvasTabletActivity"></activity>
     </application>
 
 </manifest>
